@@ -14,19 +14,22 @@
         *{
             font-family: 'Work Sans', sans-serif; 
         }
+        main{
+          /* display: none; */
+        }
     </style>
 </head>
 <body>
     <header class="mx-auto">
-            <div class="hero h-screen bg-[#F9F6E2] ">
-                <div class="hero-content flex-col lg:flex-row gap-12">
+            <div class="hero h-full bg-[#F9F6E2]">
+                <div class="hero-content flex-col lg:flex-row gap-12 lg:py-40">
                   <!-- Banner Content  -->
                   <div class="text-center lg:text-left">
-                    <h3 class="text-3xl font-medium mb-9 text-center">---SALE FEVER---</h3>
-                    <h1 class="text-6xl font-bold w-max text-center">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h1>
+                    <h3 class="text-lg lg:text-3xl font-medium mb-9 text-center">---SALE FEVER---</h3>
+                    <h1 class="text-2xl lg:text-6xl font-bold w-max text-center">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h1>
                     <div class="flex flex-col lg:flex-row items-center gap-4 mt-11 justify-center">
-                        <p class="py-6 text-xl font-medium">Use Promo Code</p>
-                        <button class="btn btn-secondary">SELL200</button>
+                        <p class="py-6 text-lg lg:text-xl font-medium">Use Promo Code</p>
+                        <button class="btn btn-secondary text-xs lg:text-base">SELL200</button>
                     </div>
                   </div>
                   <!-- Banner Image -->
@@ -42,7 +45,7 @@
             <section>
             <!-- Kitchenware Section -->
             <section>
-            <h2 class="text-3xl font-semibold mb-14">Kitchenware</h2>
+            <h2 class="text-3xl font-semibold mb-14 text-center lg:text-left">Kitchenware</h2>
             <div class="flex flex-col lg:flex-row gap-4">
                 <!-- 1 -->
                 <div class="card w-full bg-base-100 shadow-xl">
@@ -99,7 +102,7 @@
             </section>
             <!-- Sportswear Section -->
             <section>
-            <h2 class="text-3xl font-semibold mb-14 mt-14">Sportswear</h2>
+            <h2 class="text-3xl font-semibold mb-14 mt-14 text-center lg:text-left">Sportswear</h2>
             <div class="flex flex-col lg:flex-row gap-7">
                 <!-- 1 -->
                 <div class="card w-full bg-base-100 shadow-xl">
@@ -158,10 +161,10 @@
             <!-- Details Section -->
             <section>
                 <div class="form-control w-max mb-9">
-                    <label class="label">
+                    <label class="flex justify-center lg:justify-start label">
                       <h3 class="text-xl font-medium my-2">Have coupon?</h3>
                     </label> 
-                    <div class="relative">
+                    <div class="relative ml-5 lg:-ml-0.5">
                       <input type="text" placeholder="Coupon code" class="input input-bordered w-full pr-16" /> 
                       <button class="btn btn-secondary absolute top-0 right-0 rounded-l-none" disabled>Apply</button>
                     </div>
