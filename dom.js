@@ -8,8 +8,8 @@ function cardListClick(target){
     const price = target.childNodes[5].childNodes[3].innerText.split(' ')[0];
     total = parseFloat(total) + parseFloat(price);
     totalPrice = total.toFixed(2);
-    // console.log(totalPrice);
     document.getElementById('total').innerText = totalPrice;
+    document.getElementById('after-discount-price').innerText = totalPrice;
     const purchaseBtn = document.getElementById("purchase-btn");
     const applyBtn = document.getElementById('apply-btn');
     if(totalPrice === 0){
